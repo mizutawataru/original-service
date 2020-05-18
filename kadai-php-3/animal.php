@@ -9,7 +9,7 @@ class Animal {
     //     $this->age  = $age;
     // }
     
-    function say() {
+    public function say() {
         print $this->name . "です。" . $this->age . "歳です。" . PHP_EOL;
     }
 }
