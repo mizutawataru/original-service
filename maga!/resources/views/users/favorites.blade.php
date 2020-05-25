@@ -9,14 +9,11 @@
                         <img class="rounded img-fluid" src="{{ Gravatar::src($user->email, 500) }}" alt="">
                     </div>
                 </div>
-                @include('user_follow.follow_button', ['user' => $user])
             </div>
             <div class="col-sm-8">
                 <h1>{{ $user->name }}</h1>
                 @include('users.navtabs', ['user' => $user])
-                @if (count($microposts) > 0)
-                    @include('microposts.microposts', ['microposts' => $microposts])
-                @endif
+                @include('microposts.microposts', ['microposts' => $microposts])
             </div>
         </div>
     </header>

@@ -14,9 +14,7 @@
             <div class="col-sm-8">
                 <h1>{{ $user->name }}</h1>
                 @include('users.navtabs', ['user' => $user])
-                @if (count($microposts) > 0)
-                    @include('microposts.microposts', ['microposts' => $microposts])
-                @endif
+                @include('users.users', ['users' => $users])
             </div>
         </div>
     </header>
